@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kamu ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+        }
+
+        .card {
+            background: white;
+            width: 90%;
+            max-width: 350px;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            animation: fadeIn 1.2s ease;
+        }
+
+        h1 {
+            color: #ff4d6d;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            background: #ff4d6d;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e63950;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Hai Aufi ❤️</h1>
+        <p id="text">
+            sebelum tahun ini berakhir aku pengen ngomong lagi.....
+        </p>
+        <button onclick="ubahTeks()">Klik di sini</button>
+    </div>
+
+    <script>
+        let tahap = 0;
+
+        function ubahTeks() {
+            const teks = document.getElementById("text");
+
+            if (tahap === 0) {
+                teks.innerHTML = "jujur aku bingung mau ngomong apa😊";
+                tahap++;
+            } else if (tahap === 1) {
+                teks.innerHTML = " tapi intinya aku bener bener takut kehilangan kamu gak mau kamu sampai di miliki orang lain maaf kalo aku egois cmn klo emng kamu bener bener gak bisa gpp kok aku mundur dan maaf mungkin aku bakal sulit untuk seperti biasanya .🌸";
+                tahap++;
+            } else {
+                teks.innerHTML = "<b>Aku suka kamu apa adanya aku bakal menerima semua kekurangan dan kelebihan kamu ❤️</b><br>Maukah kamu kasih aku kesempatan satu kali lagi?";
+            }
+        }
+    </script>
+
+</body>
+</html>
