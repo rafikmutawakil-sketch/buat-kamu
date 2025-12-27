@@ -1,2 +1,0 @@
-# buat-kamu
-sorry egois
